@@ -5,7 +5,7 @@
         This module provide simple and very useful portal functionality to enterprise documents module. 
         documents  owners can see their own documents on portal also they can upload documents to odoo documents.
     """,
-    "version": "17.0.1",
+    "version": "17.0.1.1",
     "description": """
         This module provide simple and very useful portal functionality to enterprise documents module. 
         documents  owners can see their own documents on portal also they can upload documents to odoo documents.
@@ -41,4 +41,4 @@
     "installable": True,
     "application": True
     
-    }
+}
