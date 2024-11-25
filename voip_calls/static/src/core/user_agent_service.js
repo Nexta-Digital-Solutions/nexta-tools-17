@@ -5,7 +5,7 @@ import { UserAgent } from "@voip/core/user_agent_service";
 
 patch(UserAgent.prototype, {
     async _onIncomingInvitation(inviteSession) {
-        if (this.session && this.session._state == "Terminated"){
+        if (this.session && (this.session._state == "Terminated" || this.session._state === undefined)){
             this.session = null;
         }
         if (this.session) {
