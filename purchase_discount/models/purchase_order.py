@@ -26,16 +26,18 @@ class PurchaseOrderLine(models.Model):
     _inherit = "purchase.order.line"
 
     # adding discount to depends
-    @api.depends("discount")
-    def _compute_amount(self):
-        return super()._compute_amount()
+    # Se comenta por que esta duplicando el calculo del descuento
+    #@api.depends("discount")
+    #def _compute_amount(self):
+    #    return super()._compute_amount()
 
     def _convert_to_tax_base_line_dict(self):
         # Inject the new price_unit with discount if there's any. There's an specific
         # value in the dictionary for the discount, but we need to include it in the
         # price unit for the stock move price unit valuation to be correct
         vals = super()._convert_to_tax_base_line_dict()
-        vals["price_unit"] = self._get_discounted_price_unit()
+        #Se comenta por que esta duplicando el calculo del descuento
+        #vals["price_unit"] = self._get_discounted_price_unit()
         return vals
 
     discount = fields.Float(string="Discount (%)", digits="Discount")
