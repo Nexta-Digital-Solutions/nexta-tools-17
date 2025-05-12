@@ -1,0 +1,46 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* date_invoice_supplier_ref_unique
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-27 12:18+0000\n"
+"PO-Revision-Date: 2024-05-27 12:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: date_invoice_supplier_ref_unique
+#: model:ir.model.fields,field_description:date_invoice_supplier_ref_unique.field_account_move__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: date_invoice_supplier_ref_unique
+#: model:ir.model.fields,field_description:date_invoice_supplier_ref_unique.field_account_move__id
+msgid "ID"
+msgstr ""
+
+#. module: date_invoice_supplier_ref_unique
+#: model:ir.model,name:date_invoice_supplier_ref_unique.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: date_invoice_supplier_ref_unique
+#: model:ir.model.fields,field_description:date_invoice_supplier_ref_unique.field_account_move____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: date_invoice_supplier_ref_unique
+#: code:addons/date_invoice_supplier_ref_unique/models/account_move.py:0
+#, python-format
+msgid ""
+"The invoice/refund with supplier invoice number '%s' already exists in Odoo "
+"under the number '%s' for supplier '%s' in the same year '%s'."
+msgstr ""
+"La factura/reembolso con el número de factura del proveedor '%s' ya existe"
+ " con el número '%s' para el proveedor '%s' en el mismo año '%s'."
