@@ -17,6 +17,7 @@ class AccountMove(models.Model):
     blockchain_checker_url = fields.Char(string="Checker URL", copy=False, tracking=True)
 
     def action_sign_blockchain(self):
+        self = self.sudo()
         self.ensure_one()
 
         signature_id = self.env['ir.config_parameter'].sudo().get_param('icommunity.signature_id', "sig_RKDEPgYSqRpNStQA6Vyfgw")
