@@ -58,7 +58,6 @@ class ICommunityAPIClient(models.TransientModel):
             "signatures": [{"id": sig_id} for sig_id in signature_ids],
         }
 
-        _logger.info("Creando evidencia en %s", url)
         try:
             res = requests.post(
                 url,

@@ -13,7 +13,8 @@ class ICommunityLabsWebhook(http.Controller):
         ['/icommunity/webhook',],
         type='json', auth='public', methods=['POST'], csrf=False
     )
-    def event_responses(self, **kwargs):
+    def event_responses(self, db, **kwargs):
+        _logger.debug(f"Received webhook request with db: {db} and kwargs: {kwargs}")
         try:
             payload = request.httprequest.get_json(force=True)
         except Exception as e:
@@ -28,6 +29,12 @@ class ICommunityLabsWebhook(http.Controller):
         evidence_id = data.get('evidence_id')
         status = event
         checker_url = data.get('checker_url')
+
+        # seleccionamos la base db
+        if not db:
+            _logger.error('Database not specified in webhook request')
+            return {'status': 'error', 'message': 'Database not specified'}
+        request.session.db = db
 
         AccountMove = request.env['account.move'].sudo()
         invoice = AccountMove.search([('blockchain_evidence_id', '=', evidence_id)], limit=1)

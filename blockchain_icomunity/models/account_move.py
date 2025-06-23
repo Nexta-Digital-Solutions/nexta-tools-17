@@ -54,14 +54,9 @@ class AccountMove(models.Model):
             files=files,
             signature_ids=signature_ids
         )
-        # print(evidencia)
 
-        # lo hacemos aqui via python:
         evidencia_id = evidencia.get('id')
 
-        # self.blockchain_evidence_data = pprint.pformat(evidencia, indent=4)
-        # self.blockchain_evidence_id = evidencia_id
-        # self.blockchain_status = evidencia.get('status', '')
         self.write({
             'blockchain_evidence_data': pprint.pformat(evidencia, indent=4),
             'blockchain_evidence_id': evidencia_id,
