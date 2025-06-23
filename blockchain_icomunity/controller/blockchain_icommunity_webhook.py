@@ -8,13 +8,14 @@ from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 
+
+# @http.route('/web/session/authenticate', type='json', auth="none")
+#     def authenticate(self, db, login, password, base_location=None):
+
 class ICommunityLabsWebhook(http.Controller):
-    @http.route(
-        ['/icommunity/webhook',],
-        type='json', auth='public', methods=['POST'], csrf=False
-    )
-    def event_responses(self, db, **kwargs):
-        _logger.debug(f"Received webhook request with db: {db} and kwargs: {kwargs}")
+    @http.route('/icommunity/webhook', type='json', auth='none')
+    def event_responses(self, db):
+        _logger.debug(f"Received webhook request with db: {db}")
         try:
             payload = request.httprequest.get_json(force=True)
         except Exception as e:
