@@ -69,6 +69,7 @@ class ICommunityAPIClient(models.TransientModel):
                 raise UserError(f"Error creando evidencia ({res.status_code}): {res.text}")
 
             data = res.json().get('data') or res.json()
+            _logger.debug(data)
             return data
 
         except requests.exceptions.RequestException as e:

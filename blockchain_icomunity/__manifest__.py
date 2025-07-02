@@ -11,6 +11,7 @@
     "depends": [
         "base",
         "account",
+        "hr_attendance",
     ],
 
     'author': "NextaDS",
@@ -22,6 +23,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/account_move.xml",
+        "views/hr_attendance.xml",
     ],
 
 }

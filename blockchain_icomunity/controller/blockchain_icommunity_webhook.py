@@ -8,6 +8,10 @@ from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 
+
+# MODEL_TO_USE = 'account.move'
+MODEL_TO_USE = 'hr.attendance'
+
 class ICommunityLabsWebhook(http.Controller):
     @http.route(
         ['/icommunity/webhook',],
@@ -29,18 +33,19 @@ class ICommunityLabsWebhook(http.Controller):
         status = event
         checker_url = data.get('checker_url')
 
-        AccountMove = request.env['account.move'].sudo()
-        invoice = AccountMove.search([('blockchain_evidence_id', '=', evidence_id)], limit=1)
-        if not invoice:
-            _logger.warning('No invoice found for evidence ID %s', evidence_id)
+        ActiveModel = request.env[MODEL_TO_USE].sudo()
+
+        record = ActiveModel.search([('blockchain_evidence_id', '=', evidence_id)], limit=1)
+        if not record:
+            _logger.warning(f"No record found for evidence_id {evidence_id} in model {MODEL_TO_USE}")
             return {'status': 'error', 'message': 'Invoice not found'}
 
-        invoice.write({
+        record.write({
             'blockchain_status': status,
             'blockchain_webhook_data': pprint.pformat(payload, indent=4),
             'blockchain_checker_url': checker_url,
         })
-        _logger.debug(f"Updated invoice {invoice.id} with status {status}")
+        _logger.debug(f"Updated record {record.id} with status {status} and checker URL {checker_url}")
 
         return {'status': 'success'}
 

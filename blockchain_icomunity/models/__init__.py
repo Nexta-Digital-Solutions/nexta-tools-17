@@ -2,3 +2,4 @@
 
 from . import account_move
 from . import icomunuty_api_client
+from . import hr_attendance
