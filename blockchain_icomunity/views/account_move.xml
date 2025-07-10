@@ -1,0 +1,31 @@
+<odoo>
+    <record id="view_move_form_blockchain" model="ir.ui.view">
+        <field name="name">account.move.form.blockchain</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <header>
+                <button name="action_sign_blockchain" type="object"
+                        string="Firmar en Blockchain"
+                        class="btn-primary"
+                        invisible="state != 'posted' or blockchain_evidence_id"/>
+            </header>
+
+
+
+            <xpath expr="//notebook" position="inside">
+                <page string="Blockchain">
+                    <group>
+                        <field name="blockchain_evidence_id"/>
+                        <field name="blockchain_status"/>
+                        <field name="blockchain_checker_url" widget="url"/>
+                        <field name="blockchain_evidence_data" widget="code" options="{'language': 'json'}"/>
+                        <field name="blockchain_webhook_data" widget="code" options="{'language': 'json'}"/>
+                    </group>
+                </page>
+            </xpath>
+
+        </field>
+    </record>
+</odoo>

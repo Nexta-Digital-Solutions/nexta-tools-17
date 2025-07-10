@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_hr_attendance_form_blockchain" model="ir.ui.view">
+        <field name="name">hr.attendance.form.blockchain</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//sheet/group[1]" position="inside">
+                <group string="Blockchain" colspan="4">
+                    <group colspan="4">
+                        <field name="blockchain_evidence_id"/>
+                        <field name="blockchain_status"/>
+                        <field name="blockchain_checker_url" widget="url"/>
+                        <field name="blockchain_evidence_data" widget="code" options="{'language': 'json'}"/>
+                        <field name="blockchain_webhook_data" widget="code" options="{'language': 'json'}"/>
+                    </group>
+                </group>
+            </xpath>
+
+        </field>
+    </record>
+
+
+    <record id="view_hr_attendance_tree_blockchain" model="ir.ui.view">
+        <field name="name">hr.attendance.tree.blockchain</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//tree" position="inside">
+                <field name="blockchain_evidence_id" optional="show"/>
+                <field name="blockchain_status" optional="show" widget="badge"
+                       decoration-success="blockchain_status == 'evidence.certified'"
+                       decoration-info="blockchain_status == 'evidence.created'"
+                          decoration-danger="blockchain_status == 'evidence.error'"/>
+            </xpath>
+
+        </field>
+    </record>
+
+
+
+    <record id="action_sign_blockchain_bulk" model="ir.actions.server">
+        <field name="name">Firmar en Blockchain</field>
+        <field name="model_id" ref="hr_attendance.model_hr_attendance"/>
+        <field name="binding_model_id" ref="hr_attendance.model_hr_attendance"/>
+        <field name="binding_view_types">tree,form</field>
+        <field name="state">code</field>
+        <field name="code">
+records.action_sign_blockchain_bulk()
+        </field>
+    </record>
+
+</odoo>
