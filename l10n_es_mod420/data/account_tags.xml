@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Tax Tags for Mod 420 IGIC -->
+        <record id="account_tag_mod420_1" model="account.account.tag">
+            <field name="name">+mod420[1]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_4" model="account.account.tag">
+            <field name="name">+mod420[4]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_6" model="account.account.tag">
+            <field name="name">+mod420[6]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_7" model="account.account.tag">
+            <field name="name">+mod420[7]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_9" model="account.account.tag">
+            <field name="name">+mod420[9]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_10" model="account.account.tag">
+            <field name="name">+mod420[10]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_12" model="account.account.tag">
+            <field name="name">+mod420[12]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_13" model="account.account.tag">
+            <field name="name">+mod420[13]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_15" model="account.account.tag">
+            <field name="name">+mod420[15]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_16" model="account.account.tag">
+            <field name="name">+mod420[16]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_18" model="account.account.tag">
+            <field name="name">+mod420[18]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_19" model="account.account.tag">
+            <field name="name">+mod420[19]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_20" model="account.account.tag">
+            <field name="name">+mod420[20]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_21" model="account.account.tag">
+            <field name="name">+mod420[21]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_22" model="account.account.tag">
+            <field name="name">+mod420[22]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_23" model="account.account.tag">
+            <field name="name">+mod420[23]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_24" model="account.account.tag">
+            <field name="name">+mod420[24]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_26" model="account.account.tag">
+            <field name="name">+mod420[26]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_27" model="account.account.tag">
+            <field name="name">+mod420[27]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_28" model="account.account.tag">
+            <field name="name">+mod420[28]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_29" model="account.account.tag">
+            <field name="name">+mod420[29]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_30" model="account.account.tag">
+            <field name="name">+mod420[30]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_31" model="account.account.tag">
+            <field name="name">+mod420[31]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_32" model="account.account.tag">
+            <field name="name">+mod420[32]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_33" model="account.account.tag">
+            <field name="name">+mod420[33]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_34" model="account.account.tag">
+            <field name="name">+mod420[34]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_35" model="account.account.tag">
+            <field name="name">+mod420[35]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <!-- Negative tags for refunds -->
+        <record id="account_tag_mod420_m21" model="account.account.tag">
+            <field name="name">-mod420[21]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_m22" model="account.account.tag">
+            <field name="name">-mod420[22]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_m23" model="account.account.tag">
+            <field name="name">-mod420[23]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_m24" model="account.account.tag">
+            <field name="name">-mod420[24]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_m34" model="account.account.tag">
+            <field name="name">-mod420[34]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+        
+        <record id="account_tag_mod420_m35" model="account.account.tag">
+            <field name="name">-mod420[35]</field>
+            <field name="applicability">taxes</field>
+            <field name="country_id" ref="base.es"/>
+        </record>
+    </data>
+</odoo>
