@@ -63,12 +63,12 @@ class StockValuationLayerRevaluation(models.TransientModel):
                 ])
                 remaining_qty = sum(remaining_svls.mapped('quantity'))
         
-        # Si aún así remaining_qty es 0, lanzar error
-        if float_is_zero(remaining_qty, precision_rounding=self.product_id.uom_id.rounding):
-            raise UserError(_("Cannot calculate unit cost: total quantity is zero."))
+        # # Si aún así remaining_qty es 0, lanzar error
+        # if float_is_zero(remaining_qty, precision_rounding=self.product_id.uom_id.rounding):
+        #     raise UserError(_("Cannot calculate unit cost: total quantity is zero."))
         
         remaining_value = self.added_value
-        remaining_value_unit_cost = remaining_value / remaining_qty
+        remaining_value_unit_cost = (remaining_value / remaining_qty) if not float_is_zero(remaining_qty, precision_rounding=self.product_id.uom_id.rounding) else 0.0
         
         for svl in remaining_svls:
             # Usar remaining_qty de la capa, o quantity si remaining_qty es 0
@@ -79,8 +79,8 @@ class StockValuationLayerRevaluation(models.TransientModel):
             else:
                 taken_remaining_value = remaining_value_unit_cost * svl_qty
             taken_remaining_value = self.currency_id.round(taken_remaining_value)
-            if float_compare(svl.remaining_value + taken_remaining_value, 0, precision_rounding=self.product_id.uom_id.rounding) < 0:
-                raise UserError(_('The value of a stock valuation layer cannot be negative. Landed cost could be use to correct a specific transfer.'))
+            # if float_compare(svl.remaining_value + taken_remaining_value, 0, precision_rounding=self.product_id.uom_id.rounding) < 0:
+            #     raise UserError(_('The value of a stock valuation layer cannot be negative. Landed cost could be use to correct a specific transfer.'))
 
             svl.remaining_value += taken_remaining_value
             remaining_value -= taken_remaining_value

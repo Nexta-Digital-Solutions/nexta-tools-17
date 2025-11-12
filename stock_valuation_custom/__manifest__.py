@@ -12,7 +12,9 @@
     "website": "",
     "license": "LGPL-3",
     "depends": ["stock_account"],
-    "data": [],
+    "data": [
+        "views/stock_valuation_layer_views.xml",
+    ],
     "installable": True,
     "application": False,
 }
