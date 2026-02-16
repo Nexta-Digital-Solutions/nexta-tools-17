@@ -1,0 +1,202 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_es_mod420
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-12 12:00+0000\n"
+"PO-Revision-Date: 2025-01-12 12:00+0000\n"
+"Last-Translator: NextaDS\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: l10n_es_mod420
+#: model:account.report.column,name:l10n_es_mod420.mod_420_column_base
+msgid "Base"
+msgstr "Base"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_title_igic_deductible
+msgid "IGIC Deductible"
+msgstr "IGIC deducible"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_igic_due
+msgid "IGIC Due"
+msgstr "IGIC devengado"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_0
+msgid "IGIC 0%"
+msgstr "IGIC 0%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_15
+msgid "IGIC 15%"
+msgstr "IGIC 15%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_20
+msgid "IGIC 20%"
+msgstr "IGIC 20%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_3
+msgid "IGIC 3%"
+msgstr "IGIC 3%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_7
+msgid "IGIC 7%"
+msgstr "IGIC 7%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_95
+msgid "IGIC 9.5%"
+msgstr "IGIC 9,5%"
+
+#. module: l10n_es_mod420
+#: model:account.tax.group,name:l10n_es_mod420.tax_group_igic_cmino
+msgid "IGIC Comercio Minorista"
+msgstr "IGIC Comercio Minorista"
+
+#. module: l10n_es_mod420
+#: model:account.report.column,name:l10n_es_mod420.mod_420_column_tax_amount
+msgid "Tax Amount"
+msgstr "Cuota"
+
+#. module: l10n_es_mod420
+#: model:account.report,name:l10n_es_mod420.mod_420
+msgid "Tax Report (Mod 420) Canary Islands"
+msgstr "Informe de impuestos Canarias (Mod 420)"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_10_12
+msgid "[10]-[12] 9.5%"
+msgstr "[10]-[12] 9,5 %"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_13_15
+msgid "[13]-[15] 15%"
+msgstr "[13]-[15] 15 %"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_16_18
+msgid "[16]-[18] 20%"
+msgstr "[16]-[18] 20 %"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_isp
+msgid "[19]-[20] ISP"
+msgstr "[19]-[20] ISP"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_1_3
+msgid "[1] 0%"
+msgstr "[1] 0 %"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_mod_21_22
+msgid "[21]-[22] Corrections"
+msgstr "[21]-[22] Modificación de bases y cuotas"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_mod_23_24
+msgid "[23]-[24] REAV Returned amounts"
+msgstr "[23]-[24] Cuotas devueltas en régimen de viajeros"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_total_25
+msgid "[25] Total Due"
+msgstr "[25] Total cuotas devengadas"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_igic_deductible
+msgid "[26]-[27] Internal Operations"
+msgstr "[26]-[27] Operaciones interiores bienes y servicios corrientes"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_igic_deductible_inv
+msgid "[28]-[29] Internal Operations Investment Goods"
+msgstr "[28]-[29] Operaciones interiores bienes de inversión"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_igic_deductible_imp
+msgid "[30]-[31] Imports"
+msgstr "[30]-[31] Importaciones de bienes corrientes"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_igic_deductible_imp_inv
+msgid "[32]-[33] Imports of Investment Goods"
+msgstr "[32]-[33] Importaciones de bienes de inversión"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_deduc_modif
+msgid "[34]-[35] Rectification of Deductions"
+msgstr "[34]-[35] Rectificación de deducciones"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_comp_agri
+msgid "[36] Agricultural Compensation Regime"
+msgstr "[36] Compensación régimen especial de agricultura, ganadería y pesca"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_comp_reg_inv
+msgid "[37] Regularization for Investment Goods"
+msgstr "[37] Regularización de cuotas soportadas por bienes de inversión"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_comp_reg_start
+msgid "[38] Regularization before the Start of the Activity"
+msgstr "[38] Regularización antes del inicio de la actividad"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_comp_reg_def
+msgid "[39] Regularization for applying the definitive prorata percentage"
+msgstr "[39] Regularización por aplicación del porcentaje de prorrata definitivo"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_total
+msgid "[40] Total Deductible"
+msgstr "[40] Total cuotas deducibles"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_diff
+msgid "[41] Difference"
+msgstr "[41] Diferencia"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_reg_art
+msgid "[42] Regularization art. 22.8.5"
+msgstr "[42] Regularización cuotas artículo 22.8.5ª Ley 20/1991"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_igic_comp
+msgid "[43] IGIC to compensate from previous periods"
+msgstr "[43] Cuotas de I.G.I.C. a compensar de períodos anteriores"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_to_deduct
+msgid "[44] To Deduct (only in complementary self-liquidation case)"
+msgstr "[44] A deducir (solo en caso de autoliquidación complementaria)"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_result
+msgid "[45] Result of the Self-liquidation"
+msgstr "[45] Resultado de la autoliquidación"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_4_6
+msgid "[4]-[6] 3%/5%"
+msgstr "[4]-[6] 3%/5%"
+
+#. module: l10n_es_mod420
+#: model:account.report.line,name:l10n_es_mod420.mod_420_casilla_7_9
+msgid "[7]-[9] 7%"
+msgstr "[7]-[9] 7 %"

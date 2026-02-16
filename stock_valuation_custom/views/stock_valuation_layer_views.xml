@@ -1,0 +1,19 @@
+<odoo>
+
+
+    <!--    extendemos la original y mostramos el botón de action_revaluation siempre-->
+    <record id="stock_valuation_layer_tree" model="ir.ui.view">
+        <field name="name">stock.valuation.layer.tree.inherit</field>
+        <field name="model">stock.valuation.layer</field>
+        <field name="inherit_id" ref="stock_account.stock_valuation_layer_tree"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//button[@name='action_revaluation']" position="attributes">
+                <attribute name="invisible"/>
+            </xpath>
+
+        </field>
+    </record>
+
+
+</odoo>

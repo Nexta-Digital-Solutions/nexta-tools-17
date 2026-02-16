@@ -43,7 +43,10 @@ class PurchaseOrder(models.Model):
             if not pickings and not orderlines.filtered(
                     lambda x: x.product_id.type == 'service'):
                 rec.delivery_status = 'nothing'
-            elif all(o.qty_received == 0 for o in orderlines):
+            # elif all(o.qty_received == 0 for o in orderlines):
+            #    rec.delivery_status = 'to_receive'
+            # Se comenta este codigo porque no comprueba las cantidades entregadas en cada linea
+            elif any(o.qty_received < o.product_qty for o in orderlines):
                 rec.delivery_status = 'to_receive'
             elif orderlines.filtered(lambda x: x.qty_received < x.product_qty):
                 rec.delivery_status = 'partial'
